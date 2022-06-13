@@ -51,3 +51,7 @@ function insertAt(arr, i, val){
 
 // console.log(insertAt([100,200,5], 2, 311));
 // console.log(insertAt([9,33,7], 1, 42));
+
+
+// BONUS!
+
