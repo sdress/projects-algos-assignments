@@ -63,10 +63,11 @@ function removeShorterStrings(arr, num){
     longStrs = [];
     for(const str of arr){
         if (str.length > num){
-            longStrs.push(str);
+            // source: https://stackoverflow.com/questions/25625991/how-to-add-an-element-to-an-array-without-any-built-in-functions
+            longStrs[longStrs.length] = str;
         }
     }
     return longStrs;
 }
 
-console.log(removeShorterStrings(['Good morning', 'sunshine', 'the', 'Earth', 'says', 'hello'], 4));
+// console.log(removeShorterStrings(['Good morning', 'sunshine', 'the', 'Earth', 'says', 'hello'], 4));
